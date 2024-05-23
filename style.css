@@ -1,0 +1,48 @@
+body {
+  text-align: center; 
+  font-family: cursive; 
+  background-image: url('assets/backplan_image.jpg');
+}
+canvas {margin: 0% auto; display: block;}
+#info {font-size: 18pt; color: red; font-weight: bold;}
+#reset {font-size: 16pt; color: green;}
+#rounds {font-size: 18pt; color: red; font-weight: bold;}
+.container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #FFB266;
+            border-radius: 100px;
+            margin:0.5rem
+        }
+.container2{ 
+  background-color: #FFB266;
+  border-radius: 100px;
+  margin:0.5rem
+}
+        .player {
+            width: 45%; /* Yeterince genişlik ayarla */
+          position: relative;
+        }
+.player::after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Position the line vertically in the middle */
+    left: calc(100% + 10%);; /* Position the line at the end of the player */
+    transform: translateY(-50%);
+    width: 5px; /* Set the width of the line */
+    height: 100%; /* Set the height of the line */
+    background-color: black; /* Set the color of the line */
+}
+
+#Xneon {
+    font-size: 60px;
+    color: #f00; /* Kırmızı renk */
+    text-shadow: 0 0 10px #f00, 0 0 20px #f00, 0 0 30px #f00, 0 0 40px #f00, 0 0 70px #f00, 0 0 80px #f00, 0 0 100px #f00, 0 0 150px #f00;
+}
+
+#Oneon {
+    font-size: 60px;
+    color: #33FFFF;
+    text-shadow: 0 0 10px #33FFFF, 0 0 20px #33FFFF, 0 0 30px #33FFFF, 0 0 40px #33FFFF, 0 0 70px #33FFFF, 0 0 80px #33FFFF, 0 0 100px #33FFFF, 0 0 150px #33FFFF;
+}
